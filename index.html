@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sekat Nusantara — Portal Berita Modern</title>
+  <meta name="description" content="Sekat Nusantara: portal berita modern dengan editor kaya, SEO otomatis, AI News, approve lewat WhatsApp, analitik, dan iklan. Satu dasbor, satu tema rapi.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+      <symbol id="i-comment" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+      <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M20 9h4M20 15h4M0 9h4M0 15h4"/></symbol>
+      <symbol id="i-device" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.1 17.3L2 22l4.8-1.1A11 11 0 1 0 20.5 3.5z"/><path d="M16.3 14.2c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.8-1.1-.7-.6-1.1-1.3-1.3-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.8 3 .7.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.3-.2-.5-.3z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <img src="logo.png" alt="Sekat Nusantara" class="brand-logo">
+        <span class="brand-name">Sekat Nusantara</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#fitur">Fitur</a>
+        <a href="#chat-ai">Chat AI</a>
+        <a href="#whatsapp">WhatsApp</a>
+        <a href="#beranda">Beranda</a>
+        <a href="#unggulan">Unggulan</a>
+        <a href="#alur">Alur</a>
+        <a href="#demo">Demo</a>
+        <a href="#harga">Harga</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#kontak" class="btn btn-primary">Mulai Sekarang</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="hero-badge">Portal Berita · Satu Dasbor · Satu Tema</span>
+        <h1 class="hero-title">Portal berita modern, cepat dikelola, dan siap jadi media digital yang bisa diandalkan.</h1>
+        <p class="hero-sub">Tulis, jadwalkan, dan publikasikan tanpa ribet — lengkap dengan SEO otomatis, analitik pembaca, iklan, sampai asisten AI. Semua lewat satu dasbor, satu tema yang rapi.</p>
+        <div class="hero-cta">
+          <a href="https://motali.online:8443/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Coba Demo</a>
+          <a href="#fitur" class="btn btn-ghost btn-lg">Lihat Fitur</a>
+        </div>
+        <ul class="hero-points">
+          <li>Chat AI buat berita cepat</li>
+          <li>AI News otomatis</li>
+          <li>Approve WhatsApp</li>
+          <li>SEO &amp; analitik</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features section" id="fitur">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Fitur Unggulan</p>
+          <h2>Semua yang dibutuhkan media modern, dalam satu tempat.</h2>
+          <p class="section-sub">Dari menulis, menerbitkan, menyebarkan, hingga mengukur — tanpa plugin, tanpa ribet.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-edit"/></svg></div>
+            <span class="card-tag">Editorial</span>
+            <h3>Editor teks kaya</h3>
+            <p>Tulis artikel dengan format penuh — tebal, daftar, kutipan, tautan — tanpa perlu menyentuh HTML.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-clock"/></svg></div>
+            <span class="card-tag">Editorial</span>
+            <h3>Draf &amp; jadwal tayang</h3>
+            <p>Simpan draf, atur tanggal tayang. Artikel muncul otomatis saat waktunya tiba.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-tag"/></svg></div>
+            <span class="card-tag">Editorial</span>
+            <h3>Kategori, tag &amp; badge</h3>
+            <p>Kelola kategori dengan warna label konsisten, arsip otomatis per topik lewat tag.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-image"/></svg></div>
+            <span class="card-tag">Media</span>
+            <h3>Manajer media</h3>
+            <p>Unggah, pratinjau, dan hapus berkas dalam satu layar ala file manager.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-image"/></svg></div>
+            <span class="card-tag">Media</span>
+            <h3>Ukuran gambar per slot</h3>
+            <p>Resize/crop otomatis untuk slider, kartu, galeri, dan iklan — hemat disk, tampilan tetap pas.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-lock"/></svg></div>
+            <span class="card-tag">Media</span>
+            <h3>Watermark</h3>
+            <p>Lindungi foto redaksi dengan tanda air sebelum tayang.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-image"/></svg></div>
+            <span class="card-tag">Media</span>
+            <h3>Galeri foto</h3>
+            <p>Carousel galeri di beranda untuk sorotan visual pembaca.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-comment"/></svg></div>
+            <span class="card-tag">Komunitas</span>
+            <h3>Komentar &amp; moderasi</h3>
+            <p>Notifikasi komentar menunggu, status pending/disetujui/spam dalam satu layar.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-mail"/></svg></div>
+            <span class="card-tag">Komunitas</span>
+            <h3>Newsletter</h3>
+            <p>Kumpulkan email pembaca dan kirim surel otomatis saat artikel baru tayang.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-share"/></svg></div>
+            <span class="card-tag">Komunitas</span>
+            <h3>Tautan sosial footer</h3>
+            <p>Ikon ikuti Facebook, Instagram, X, YouTube, TikTok, LinkedIn, dan WhatsApp di situs publik.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-share"/></svg></div>
+            <span class="card-tag">Sebaran</span>
+            <h3>Facebook Page (AI News)</h3>
+            <p>Auto-share ke Halaman Facebook saat draf AI News disetujui — bukan untuk setiap artikel manual.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-globe"/></svg></div>
+            <span class="card-tag">SEO</span>
+            <h3>SEO &amp; permalink otomatis</h3>
+            <p>Open Graph, canonical, sitemap, robots, dan RSS dari artikel yang sudah tayang.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-globe"/></svg></div>
+            <span class="card-tag">SEO</span>
+            <h3>Arsip kategori &amp; tag</h3>
+            <p>Halaman arsip terfilter per kategori dan tag agar pembaca menemukan topik dengan cepat.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-edit"/></svg></div>
+            <span class="card-tag">SEO</span>
+            <h3>Pencarian &amp; paginasi</h3>
+            <p>Cari dan saring berita di arsip dengan paginasi yang rapi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-dollar"/></svg></div>
+            <span class="card-tag">Monetisasi</span>
+            <h3>Slot iklan</h3>
+            <p>Pasang banner di posisi strategis — sidebar, bawah, arsip, artikel — tanpa koding.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-chart"/></svg></div>
+            <span class="card-tag">Pertumbuhan</span>
+            <h3>Bacaan internal</h3>
+            <p>Statistik views dan pengunjung tanpa bergantung layanan luar.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-chart"/></svg></div>
+            <span class="card-tag">Pertumbuhan</span>
+            <h3>Google Analytics GA4</h3>
+            <p>Sambungkan akun GA4 untuk chart dan wawasan lanjutan.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-lock"/></svg></div>
+            <span class="card-tag">Pertumbuhan</span>
+            <h3>Audit log</h3>
+            <p>Jejak aktivitas admin untuk transparansi redaksi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-cpu"/></svg></div>
+            <span class="card-tag">Kecerdasan</span>
+            <h3>Chat AI — buat berita cepat</h3>
+            <p>Kirim foto + catatan di dasbor Chat; AI menyusun judul, lead, dan isi. Simpan draf, lalu opsional kirim ke admin (WhatsApp).</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-cpu"/></svg></div>
+            <span class="card-tag">Kecerdasan</span>
+            <h3>AI Model</h3>
+            <p>Atur endpoint dan model AI yang dipakai Chat serta AI News.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-cpu"/></svg></div>
+            <span class="card-tag">Kecerdasan</span>
+            <h3>AI News</h3>
+            <p>Ambil materi dari sumber berita otomatis, tulis draf, lalu setujui sebelum tayang.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-whatsapp"/></svg></div>
+            <span class="card-tag">Kecerdasan</span>
+            <h3>WhatsApp approve</h3>
+            <p>Draf AI dikirim ke nomor target; admin balas <strong>YA</strong> / <strong>TIDAK</strong>. Bridge Baileys + Start/Stop di dasbor.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-device"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>PWA</h3>
+            <p>Situs dapat dipasang sebagai aplikasi di perangkat pembaca.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-edit"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>Tema &amp; 6 preset warna</h3>
+            <p>Ganti warna kulit portal lewat preset tanpa menyentuh kode.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-mail"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>Mail SMTP</h3>
+            <p>Konfigurasi pengiriman surel sendiri untuk newsletter dan notifikasi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-lock"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>Masuk Google (OAuth)</h3>
+            <p>Daftar atau masuk dengan akun Google untuk pembaca dan redaksi.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-lock"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>Peran &amp; izin</h3>
+            <p>Role user/admin plus izin menulis dan menayangkan (<code>can_write</code> / <code>can_publish</code>).</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-code"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>API token &amp; grant</h3>
+            <p>Integrasi pihak ketiga lewat token API dengan grant yang terkendali.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon"><svg><use href="#i-globe"/></svg></div>
+            <span class="card-tag">Teknologi</span>
+            <h3>Dua bahasa</h3>
+            <p>Antarmuka pembaca Indonesia dan Inggris.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-ai-block section" id="chat-ai">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Chat AI</p>
+          <h2>Buat berita cepat dari foto dan catatan.</h2>
+          <p class="section-sub">Di <code>dashboard/chat</code>, redaksi mengirim gambar atau ringkasan kejadian. AI mengembalikan judul, deskripsi, kategori, dan isi siap <strong>Save draft</strong> — tanpa mulai dari dokumen kosong.</p>
+        </div>
+        <ol class="chat-ai-steps">
+          <li><strong>Kirim</strong> foto dan/atau catatan ke asisten</li>
+          <li><strong>Terima</strong> draf berita terstruktur dari AI</li>
+          <li><strong>Save draft</strong> ke daftar posts, atau <strong>Send to admin</strong> untuk approve WA</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="whatsapp-block section" id="whatsapp">
+      <div class="container">
+        <div class="wa-layout">
+          <div class="wa-copy">
+            <p class="eyebrow">WhatsApp untuk redaksi</p>
+            <h2>Setujui berita AI langsung dari chat.</h2>
+            <p class="section-sub">Setelah AI News menulis draf, ringkasan dikirim ke nomor target. Balas YA untuk tayang, TIDAK untuk tolak — atau tanya status draf di chat yang sama.</p>
+            <ul class="wa-points">
+              <li>Pair bot lewat QR di dasbor AI News</li>
+              <li>Start / Stop server bridge dari tombol dasbor</li>
+              <li>Multi nomor target (admin/redaksi)</li>
+              <li>Nomor bot pair harus beda dari nomor target</li>
+            </ul>
+            <p class="wa-note">Ini saluran <strong>approve redaksi</strong>, bukan WhatsApp Channel publik untuk pembaca. Ikon WhatsApp di footer situs = tautan ikuti brand (terpisah).</p>
+          </div>
+          <div class="wa-panel">
+            <div class="wa-bubble wa-bot">Draf #12 siap ditinjau.<br>Setujui: <strong>YA 12</strong> · Tolak: <strong>TIDAK 12</strong></div>
+            <div class="wa-bubble wa-admin">YA 12</div>
+            <div class="wa-bubble wa-bot">✅ Draf #12 dipublish.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-modules section" id="beranda">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Tampilan Beranda</p>
+          <h2>Lapisan beranda modular untuk pembaca.</h2>
+          <p class="section-sub">Setiap blok diisi API tanpa merusak kulit referensi — siap dipakai sebagai wajah media Anda.</p>
+        </div>
+        <ul class="module-list">
+          <li>Slider utama</li>
+          <li>Kartu unggulan</li>
+          <li>Grid kategori</li>
+          <li>Berita terbaru (carousel)</li>
+          <li>Worlds</li>
+          <li>Technology / Life Style / Health / Sports / Business</li>
+          <li>Galeri foto</li>
+          <li>Video</li>
+          <li>Sidebar Rising</li>
+          <li>Widget penulis, komentar, dan tag</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="differentiators section" id="unggulan">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Yang Membedakan</p>
+          <h2>Ringan, fokus, dan langsung jalan.</h2>
+        </div>
+        <div class="diff-list">
+          <div class="diff-item">
+            <svg><use href="#i-code"/></svg>
+            <div>
+              <h3>Satu tema, satu dasbor</h3>
+              <p>Tanpa plugin, tanpa revisi berlapis, tanpa cron. Fitur masuk lewat model atau satu controller.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <svg><use href="#i-globe"/></svg>
+            <div>
+              <h3>SEO siap pakai</h3>
+              <p>Permalink, sitemap, RSS, dan Open Graph otomatis dihasilkan dari artikel yang tayang.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <svg><use href="#i-code"/></svg>
+            <div>
+              <h3>Satu pintu API</h3>
+              <p>Tiap tabel jadi resource CRUD otomatis (<code>/api/…</code>), mudah diintegrasikan pihak ketiga.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <svg><use href="#i-clock"/></svg>
+            <div>
+              <h3>Konten berjalan sendiri</h3>
+              <p>Jadwal tayang, newsletter, dan analitik menyatu dalam satu alur kerja.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flow section" id="alur">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Alur Kerja</p>
+          <h2>Dari ide sampai terukur, satu alur.</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">1</span><h3>Tulis / Chat AI</h3><p>Editor kaya, atau foto+catatan → draf cepat di Chat.</p></li>
+          <li><span class="step-num">2</span><h3>Approve WhatsApp</h3><p>Redaksi balas YA/TIDAK di chat sebelum tayang.</p></li>
+          <li><span class="step-num">3</span><h3>Terbitkan &amp; sebar</h3><p>SEO otomatis, newsletter, Facebook AI News, iklan.</p></li>
+          <li><span class="step-num">4</span><h3>Ukur &amp; kembangkan</h3><p>Analitik internal dan GA4 memandu keputusan.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="demo section" id="demo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Coba Langsung</p>
+          <h2>Rasakan sendiri lewat demo.</h2>
+          <p class="section-sub">Jelajahi situs publik dan masuk ke dasbor admin tanpa perlu mendaftar.</p>
+        </div>
+        <div class="demo-grid">
+          <a class="demo-card" href="https://motali.online:8443/" target="_blank" rel="noopener">
+            <div class="demo-icon"><svg><use href="#i-globe"/></svg></div>
+            <h3>Situs Publik</h3>
+            <p>Lihat beranda, artikel, galeri, kategori, dan slot iklan pada tampilan pembaca.</p>
+            <span class="demo-url">motali.online:8443</span>
+          </a>
+          <div class="demo-card demo-login">
+            <div class="demo-icon"><svg><use href="#i-lock"/></svg></div>
+            <h3>Dasbor Admin</h3>
+            <p>Kelola berita, iklan, analitik, AI News, dan pengaturan — akses admin diberikan saat demo.</p>
+            <a class="btn btn-primary" href="https://motali.online:8443/dashboard" target="_blank" rel="noopener">Buka Dashboard</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="harga">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Harga</p>
+          <h2>Paket yang jelas, tanpa biaya tersembunyi.</h2>
+          <p class="section-sub">Pilih sesuai kebutuhan media Anda. Angka di bawah masih contoh dan bisa disesuaikan dengan cakupan.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Dasar</h3>
+            <p class="price">Rp 299.000<span>/bulan</span></p>
+            <p class="price-desc">Untuk media kecil yang mulai online.</p>
+            <ul>
+              <li>Editor kaya + draf &amp; jadwal tayang</li>
+              <li>Kategori, tag, badge &amp; SEO otomatis</li>
+              <li>Media, ukuran slot &amp; galeri</li>
+              <li>Komentar + moderasi + newsletter</li>
+              <li>PWA + tema (6 preset) + 2 bahasa</li>
+              <li>Mail SMTP + peran/izin dasar</li>
+            </ul>
+            <a class="btn btn-outline" href="#kontak">Pilih Dasar</a>
+          </div>
+          <div class="price-card featured">
+            <span class="badge-populer">Populer</span>
+            <h3>Pro</h3>
+            <p class="price">Rp 799.000<span>/bulan</span></p>
+            <p class="price-desc">Untuk media yang tumbuh dan butuh otomatisasi.</p>
+            <ul>
+              <li>Semua fitur Dasar</li>
+              <li>Chat AI buat berita cepat (foto + catatan → draf)</li>
+              <li>AI Model + AI News otomatis dari sumber</li>
+              <li>WhatsApp approve (YA/TIDAK) + bridge dasbor</li>
+              <li>Auto-share Facebook Page (AI News)</li>
+              <li>Bacaan internal + Google Analytics GA4</li>
+              <li>Slot iklan + watermark + audit log</li>
+              <li>API token &amp; grant + OAuth Google</li>
+            </ul>
+            <a class="btn btn-primary" href="#kontak">Pilih Pro</a>
+          </div>
+          <div class="price-card">
+            <h3>Penawaran Khusus</h3>
+            <p class="price">Kustom</p>
+            <p class="price-desc offer-desc">Ceritakan kebutuhan media Anda — tim kami membantu memilih paket Dasar atau Pro yang paling cocok dan menyesuaikan fiturnya.</p>
+            <a class="btn btn-outline" href="https://wa.me/6281341759025" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+          </div>
+        </div>
+        <p class="pricing-note">Angka harga bersifat contoh sementara dan dapat diubah.</p>
+      </div>
+    </section>
+
+    <section class="cta section" id="kontak">
+      <div class="container cta-inner">
+        <h2>Siap menjadikan media Anda lebih mudah dikelola?</h2>
+        <p>Hubungi kami untuk demo dan penawaran proposal.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:kontak@sekatnusantara.id">Hubungi Kami</a>
+        <p class="cta-contact" id="ctaContact">kontak@sekatnusantara.id</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Sekat Nusantara" class="brand-logo">
+        <span>Sekat Nusantara</span>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Sekat Nusantara. Portal berita modern.</p>
+      <nav class="footer-nav">
+        <a href="#fitur">Fitur</a>
+        <a href="#unggulan">Unggulan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
